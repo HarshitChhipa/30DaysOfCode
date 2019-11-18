@@ -12,3 +12,6 @@ Like simply i could have write if and else statements and that will be suffcient
 Now thats the tricky part here we can do this thing in a line without any complexity(If else also don't have complexity however if we talk about amount of code) and
 much line of codes.
 We could have done it using the ternery statement.
+
+# Like this 
+  (N%2 == 1 || (N > 5 && N < 21)) ? console.log('Weird'): console.log('Not Weird');
