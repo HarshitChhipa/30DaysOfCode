@@ -10,16 +10,16 @@ Hacker
 Rank
 
 Solution :-
-input.split("\n").map((element,index) => {
-        if(index > 0){
+input.split("\n").map((mainInput,indexOfMainInput) => {
+        if(indexOfMainInput > 0){
         let evenString = [];
         let oddString = [];
-        element.split("").map(((char,indexOfArray) =>{
-        if(indexOfArray == 0 || (indexOfArray %2) === 0 ){
-            evenString.push(char)
-        }else{ oddString.push(char)}
+        mainInput.split("").map(((splittedMainInput,indexOfsplittedMainInput) =>{
+        if(indexOfsplittedMainInput == 0 || (indexOfsplittedMainInput %2) === 0 ){
+            evenString.push(splittedMainInput)
+        }else{ oddString.push(splittedMainInput)}
         }))
         console.log(evenString.join("")+' '+oddString.join(""));
         }
     });
-    {Although I am trying to improve it}
+{Although I am trying to improve it, lets see how much we can optimize it}
