@@ -1,1 +1,12 @@
+Problem :- 
+Given a string, , of length  that is indexed from  to , print its even-indexed and odd-indexed characters as  
+space-separated strings on a single line (see the Sample below for more detail).
+Note:  is considered to be an even index.
 
+(This was pain my ass as after reading a discussion i figure it out that I have split in in a new line and then loop through it)
+Sample Input :-
+2
+Hacker
+Rank
+
+Solution :-
