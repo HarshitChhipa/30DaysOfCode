@@ -1,2 +1,10 @@
 Problem :-
 Given an array, , of  integers, print 's elements in reverse order as a single line of space-separated numbers.
+
+Solution :-
+This one liner i wrote.
+It just it increases the complexity there will be one loop for reverse() then one for joining it so eventually there will be
+2 loop.
+console.log(arr.reverse().join(' '));
+
+I am figuring it out to do it in one for loop.
