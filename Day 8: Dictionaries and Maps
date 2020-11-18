@@ -1,1 +1,16 @@
-
+# MAIN LOGIC
+    var input = input.split("\n");
+    let tempObj = {};
+    for(let i=0; i< input.length; i++) {
+        if(input[i] !== input[0]) {
+        if(i >= parseInt(input[0],10)+1){
+            if(tempObj[input[i].split(' ')[0]]){
+            console.log(`${input[i].split(' ')[0]}=${tempObj[input[i].split(' ')[0]]}`);
+            } else {
+                console.log('Not found')
+              }
+            } else {
+                tempObj[input[i].split(' ')[0]] = input[i].split(' ')[1]; 
+            }
+        }          
+     }
