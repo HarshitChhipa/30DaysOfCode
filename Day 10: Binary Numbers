@@ -4,4 +4,18 @@ console.log(n.toString(2).split('0').sort((a, b) => a < b)[0].length);
 
 # One which was tried by me and couldn't pass test to still need to figure out my way of doing it.
 
+
+    let noOf1s = 0;
+    binaryArray.forEach((number,index) => {
+    if(number ===1 ){
+        if(binaryArray[index+1] === 1){       
+        noOf1s++;
+        } else {
+            return;
+        }
+    } else {
+        return;
+    }    
+    });
+    console.log(noOf1s);
     
