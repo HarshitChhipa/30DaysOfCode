@@ -1,1 +1,18 @@
+# First Attempt Code
 
+    let maxSum; 
+    for(let i =1 ; i < arr.length - 1 ; i++){
+        for(let j =1 ; j < arr.length - 1 ; j++){
+            let tempSum;
+            tempSum = arr[i][j] + arr[i+1][j] + arr[i+2][j] + arr[i+1][j+1] + arr[i][j+2] + arr[i+1][j+2] + arr[i+2][j+2];
+            if(i == 3 && j == 4) {
+                console.log(arr[i-1][j-1] , arr[i][j-1] , arr[i+1][j-1] , arr[i][j] , arr[i-1][j+1] , arr[i][j+1] , arr[i+1][j+1]);
+             console.log(tempSum);   
+            }
+            console.log(tempSum);
+            if(tempSum > maxSum) {
+                maxSum = tempSum
+            } 
+        }
+    }
+    console.log(maxSum);
