@@ -1,1 +1,33 @@
+# Inheritance
 
+class Student extends Person {    
+constructor(firstName,lastName,id,scores){
+        super();
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.id = id;
+        this.scores = scores;
+    }
+printPerson() {
+    console.log(`Name: ${this.lastName}, ${this.firstName}`);
+    console.log(`ID: ${this.id}`);
+}
+    calculate() {
+        let total = 0;
+        this.scores.forEach(res => total += res);
+        total = Math.ceil(total/this.scores.length);
+        if(total >=90 && total <= 100){
+            return 'O';
+        } else if(total >=80 && total < 90) {
+            return 'E';
+        } else if(total >=70 && total < 80) {
+            return 'A';
+        }  else if(total >=55 && total < 70) {
+            return 'P';
+        }  else if(total >=40 && total < 55) {
+            return 'D';
+        } else {
+            return 'T';
+        }
+    }   
+}
